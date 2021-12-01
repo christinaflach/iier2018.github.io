@@ -1,11 +1,13 @@
 ---
+title: On the Sustainability of Academic Software - The Case of Static Analysis Tools
+theme: simple
 layout: default
 ---
 
 <!-- -------------------------------- -->
 
 <section>
-<img style="position:absolute;left:-220px;top:-80px" src="/files/LogoEng.png" />
+<img style="position:absolute;left:-220px;top:-80px" src="./figs/LogoEng.png" />
 ### On the Sustainability of Academic Software: The Case of Static Analysis Tools
 
 <table style="font-size:0.8em"><tr>
@@ -71,7 +73,7 @@ ALLEN, A. et al. 2017.
 <!-- -------------------------------- -->
 
 <section>
-<img src="/files/scientific-reputation-diagram-en.png" style="background: white" />
+<img src="./figs/scientific-reputation-diagram-en.png" style="background: white" />
 
 <small class="cite">
 James Howison and James D. Herbsleb. 2011.
