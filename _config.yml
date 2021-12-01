@@ -1,1 +1,65 @@
-theme: jekyll-theme-tactile
+# Site settings
+title: Joenio Marques da Costa
+email: joenio@joenio.me
+baseurl: ""
+url: "http://joenio.me"
+
+# Build settings
+markdown: kramdown
+permalink: ":title/index.html"
+
+# Opcoes para kramdown
+kramdown:
+  parse_block_html: true
+
+# Alterando de _site/ para public/ para respeitar o gitlab pages
+destination: "public/"
+
+# Nao copie estes arquivos para _site
+exclude:
+  - README.markdown
+  - script
+  - samples
+
+# Nao apague estes arquivos ao executar build
+keep_files:
+  - .git
+  - .svn
+  - javascript
+
+collections:
+  pages:
+    output: true
+    permalink: ":title/index.html"
+  slides:
+    output: true
+    permalink: ":title/index.html"
+  ascii:
+    output: true
+    permalink: ":path"
+
+# Configuracoes padrao para posts
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "post"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "slides"
+    values:
+      layout: "revealjs"
+  -
+    scope:
+      path: ""
+      type: "ascii"
+    values:
+      layout: null
